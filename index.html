@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>lipsumize</title>
+    <meta name="description" content="">
+    <meta name="author" content="ozzmotik">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JAVASCRIPT
+  -------------------------------------------------- -->
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.lipsumize.js"></script>
+    <script src="js/jquery.nouislider.all.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Tangerine|Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.nouislider.min.css">
+    <link rel="stylesheet" href="css/jquery.nouislider.pips.min.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">
+            <div class="three-quarters column" id='content'>
+                <h4>lipsumize</h4>
+                <form id='generate'>
+                    <div class='row'>
+                        <div class='center twelve columns'>
+                            <label for='paragraphs' class='inline'>Paragraphs:</label>
+                            <input type="number" class='x-full-width' placeholder="paragraphs..." value="5" id="paragraphs" />
+                            <input type='submit' class='button-primary' style='margin-left: 2%' id='lipsumize' value='generate lipsum' />
+                        </div>
+                        <div class='twelve columns'>
+                            <label for='wordsPerSentence' class='two columns inline'>Words Per Sentence:</label>
+                            <div id="wordsPerSentence" class='eight columns inline'></div>
+                            <br />
+                            <div id='wps_display' class='space'>
+                                Between
+                                <span id='wpl'></span> and
+                                <span id='wph'></span>
+                            </div>
+                            <input type='number' readonly='readonly' id='wps_low' class='noinput' />
+                            <input type='number' readonly='readonly' id='wps_hi' class='noinput' />
+                        </div>
+                        <div class='center twelve columns'>
+                            <label for='sentencesPerParagraph' class='two columns inline'>Sentences per Paragraph:</label>
+                            <div class='eight columns' placeholder="sentences per paragraph..." id="sentencesPerParagraph"></div>
+                            <br />
+                            <div id='spp_display' class='space'>
+                                Between
+                                <span id='spl'></span> and
+                                <span id='sph'></span>
+                            </div>
+                            <input type='number' readonly='readonly' id='spp_low' class='noinput' />
+                            <input type='number' readonly='readonly' id='spp_hi' class='noinput' />
+                        </div>
+                    </div>
+                </form>
+                <div id='lipsum-text' class='12 columns space'></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+#content {
+  margin-top: 5%;
+  font-family: monospace;
+}
+
+p:last-of-type {
+  margin-bottom: 8px;
+}
+
+.space { 
+  margin: 8px 0 8px 0;
+}
+
+.center {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.inline { 
+	display: inline;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+.noinput {
+	display: none;
+}
+p {
+  font-family: 'Tangerine', cursive;
+  float:right;
+  margin-top: 1%;
+  font-size: 2.5rem;
+}
+
+p:first-letter {
+  float: left;
+  clear:right;
+  font-size: 200%;
+  font-weight: bolder;
+  margin: -1rem 1rem 0 0;
+  text-transform: uppercase;
+  font-family: 'Tangerine', cursive;
+}
+
+.bottom-border {
+	border-bottom: 8px dotted #a3a3a3;
+}
+
+body {
+	background-image: url(images/papyrus.jpg);
+}
+
+#lipsum-text {
+	background: rgb(200,200,200);
+	background: rgba(200,200,200,0.2);
+	padding: 0 10% 0 10%;
+}
